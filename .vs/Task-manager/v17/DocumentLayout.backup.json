@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ShadowLancel\\source\\repos\\Task-manager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{06D4A471-F49F-4C51-9B6C-C75104F2D3C1}|Task-manager\\Task-manager.pyproj|C:\\Users\\ShadowLancel\\source\\repos\\Task-manager\\Task-manager\\app\\routes\\projects.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{06D4A471-F49F-4C51-9B6C-C75104F2D3C1}|Task-manager\\Task-manager.pyproj|solutionrelative:Task-manager\\app\\routes\\projects.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06D4A471-F49F-4C51-9B6C-C75104F2D3C1}|Task-manager\\Task-manager.pyproj|C:\\Users\\ShadowLancel\\source\\repos\\Task-manager\\Task-manager\\app\\routes\\tasks.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{06D4A471-F49F-4C51-9B6C-C75104F2D3C1}|Task-manager\\Task-manager.pyproj|solutionrelative:Task-manager\\app\\routes\\tasks.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06D4A471-F49F-4C51-9B6C-C75104F2D3C1}|Task-manager\\Task-manager.pyproj|C:\\Users\\ShadowLancel\\source\\repos\\Task-manager\\Task-manager\\app\\routes\\tags.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{06D4A471-F49F-4C51-9B6C-C75104F2D3C1}|Task-manager\\Task-manager.pyproj|solutionrelative:Task-manager\\app\\routes\\tags.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06D4A471-F49F-4C51-9B6C-C75104F2D3C1}|Task-manager\\Task-manager.pyproj|C:\\Users\\ShadowLancel\\source\\repos\\Task-manager\\Task-manager\\app\\schemas.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{06D4A471-F49F-4C51-9B6C-C75104F2D3C1}|Task-manager\\Task-manager.pyproj|solutionrelative:Task-manager\\app\\schemas.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06D4A471-F49F-4C51-9B6C-C75104F2D3C1}|Task-manager\\Task-manager.pyproj|C:\\Users\\ShadowLancel\\source\\repos\\Task-manager\\Task-manager\\app\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{06D4A471-F49F-4C51-9B6C-C75104F2D3C1}|Task-manager\\Task-manager.pyproj|solutionrelative:Task-manager\\app\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "models.py",
+              "DocumentMoniker": "C:\\Users\\ShadowLancel\\source\\repos\\Task-manager\\Task-manager\\app\\models.py",
+              "RelativeDocumentMoniker": "Task-manager\\app\\models.py",
+              "ToolTip": "C:\\Users\\ShadowLancel\\source\\repos\\Task-manager\\Task-manager\\app\\models.py",
+              "RelativeToolTip": "Task-manager\\app\\models.py",
+              "ViewState": "AgIAACoAAAAAAAAAAAAIwEQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-03-03T14:43:55.284Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "projects.py",
+              "DocumentMoniker": "C:\\Users\\ShadowLancel\\source\\repos\\Task-manager\\Task-manager\\app\\routes\\projects.py",
+              "RelativeDocumentMoniker": "Task-manager\\app\\routes\\projects.py",
+              "ToolTip": "C:\\Users\\ShadowLancel\\source\\repos\\Task-manager\\Task-manager\\app\\routes\\projects.py",
+              "RelativeToolTip": "Task-manager\\app\\routes\\projects.py",
+              "ViewState": "AgIAADUAAAAAAAAAAAAAwDwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-03-03T16:12:48.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "schemas.py",
+              "DocumentMoniker": "C:\\Users\\ShadowLancel\\source\\repos\\Task-manager\\Task-manager\\app\\schemas.py",
+              "RelativeDocumentMoniker": "Task-manager\\app\\schemas.py",
+              "ToolTip": "C:\\Users\\ShadowLancel\\source\\repos\\Task-manager\\Task-manager\\app\\schemas.py",
+              "RelativeToolTip": "Task-manager\\app\\schemas.py",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-03-03T14:14:28.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "tags.py",
+              "DocumentMoniker": "C:\\Users\\ShadowLancel\\source\\repos\\Task-manager\\Task-manager\\app\\routes\\tags.py",
+              "RelativeDocumentMoniker": "Task-manager\\app\\routes\\tags.py",
+              "ToolTip": "C:\\Users\\ShadowLancel\\source\\repos\\Task-manager\\Task-manager\\app\\routes\\tags.py",
+              "RelativeToolTip": "Task-manager\\app\\routes\\tags.py",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAwE0AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-03-03T14:43:09.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "tasks.py",
+              "DocumentMoniker": "C:\\Users\\ShadowLancel\\source\\repos\\Task-manager\\Task-manager\\app\\routes\\tasks.py",
+              "RelativeDocumentMoniker": "Task-manager\\app\\routes\\tasks.py",
+              "ToolTip": "C:\\Users\\ShadowLancel\\source\\repos\\Task-manager\\Task-manager\\app\\routes\\tasks.py",
+              "RelativeToolTip": "Task-manager\\app\\routes\\tasks.py",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAAAJkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-03-03T14:06:38.589Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
