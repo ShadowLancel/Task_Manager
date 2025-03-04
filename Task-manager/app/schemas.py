@@ -1,4 +1,4 @@
-from pydantic import BaseModel, EmailStr, validator
+from pydantic import BaseModel, EmailStr
 from typing import Optional, List
 from datetime import datetime
 
@@ -20,6 +20,7 @@ class UserResponse(UserBase):
 class ProjectBase(BaseModel):
     name: str
     description: Optional[str] = None
+    due_date: Optional[datetime] = None
 
 class ProjectCreate(ProjectBase):
     pass
@@ -49,6 +50,7 @@ class TaskBase(BaseModel):
 
 class TaskCreate(TaskBase):
     tag_ids: list[int] = []
+    due_date: Optional[datetime] = None
 
 class TaskResponse(TaskBase):
     id: int
@@ -56,6 +58,8 @@ class TaskResponse(TaskBase):
     completed: bool
     owner_id: Optional[int] = None  
     tags: List[TagResponse] = []
+    project: Optional[ProjectResponse] = None 
+    due_date: Optional[datetime] = None
 
     class Config:
         from_attributes = True
@@ -69,9 +73,11 @@ class ActivityLogCreate(ActivityLogBase):
 
 class ActivityLogResponse(ActivityLogBase):
     id: int
+    task_title: str
     timestamp: datetime
     task_id: int
     user_id: Optional[int] = None
+    user_name: str
 
     class Config:
         from_attributes = True

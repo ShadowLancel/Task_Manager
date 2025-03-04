@@ -22,7 +22,7 @@ def create_project(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="Project with this name already exists"
         )
-    new_project = Project(name=project.name, description=project.description)
+    new_project = Project(name=project.name, description=project.description, due_date=project.due_date)
     db.add(new_project)
     db.commit()
     db.refresh(new_project)
@@ -61,6 +61,7 @@ def update_project(
     
     project.name = project_data.name
     project.description = project_data.description
+    project.due_date = project_data.due_date
     db.commit()
     db.refresh(project)
     return project

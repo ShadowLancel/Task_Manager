@@ -35,8 +35,10 @@
     <Compile Include="app\services\auth.py" />
     <Compile Include="app\services\task_service.py" />
     <Compile Include="app\utils.py" />
+    <Compile Include="migrations\398f37a1964d_add_projects_tags_and_activity_log.py" />
     <Compile Include="migrations\8969f7c98021_initial_migration.py" />
     <Compile Include="migrations\env.py" />
+    <Compile Include="migrations\faa9dae0cd85_add_due_time_to_tasks_and_projects.py" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">

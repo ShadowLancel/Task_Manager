@@ -34,9 +34,10 @@ class Task(Base):
     owner_id = Column(Integer, ForeignKey("users.id"))
     owner = relationship("User", back_populates="tasks")
     project_id = Column(Integer, ForeignKey("projects.id"), nullable=True)
-    project = relationship("Project", back_populates="tasks")
+    project = relationship("Project", back_populates="tasks", lazy="joined")
     tags = relationship("Tag", secondary=task_tags, back_populates="tasks", lazy="joined")
     activity_logs = relationship("ActivityLog", back_populates="task", cascade="all, delete-orphan")
+    due_date = Column(DateTime, nullable=True)
 
 class Project(Base):
     __tablename__ = "projects"
@@ -44,9 +45,8 @@ class Project(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, unique=True, nullable=False)
     description = Column(String)
-    
-    # Один проект может иметь множество задач
     tasks = relationship("Task", back_populates="project")
+    due_date = Column(DateTime, nullable=True)
 
 class Tag(Base):
     __tablename__ = "tags"

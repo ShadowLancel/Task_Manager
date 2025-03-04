@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from app.database import engine, Base
 from app.routes import tasks, users, projects, tags, activity_log
 import logging
@@ -7,6 +8,20 @@ logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 app = FastAPI()
+
+# Настройка CORS
+origins = [
+    "http://localhost:3000",  # Разрешаем запросы с React-клиента
+    "http://127.0.0.1:3000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,  # Разрешаемые источники
+    allow_credentials=True,  # Разрешить куки/токены
+    allow_methods=["*"],     # Разрешить все методы (GET, POST, OPTIONS и т.д.)
+    allow_headers=["*"],     # Разрешить все заголовки
+)
 
 # Создаем таблицы при старте приложения
 Base.metadata.create_all(bind=engine)

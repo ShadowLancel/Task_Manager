@@ -51,7 +51,8 @@ def create_task(
             title=task_data.title,
             description=task_data.description,
             project_id=task_data.project_id,
-            owner_id=current_user.id
+            owner_id=current_user.id,
+            due_date=task_data.due_date
         )
         # Присваиваем теги до сохранения задачи
         if tags:
@@ -70,17 +71,11 @@ def create_task(
 
 @router.get("/", response_model=List[TaskResponse])
 def get_tasks(db: Session = Depends(get_db)):
-    logger.debug("Fetching all tasks")
-    try:
-        tasks = db.query(Task).all()
-        logger.debug(f"Retrieved tasks: {tasks}")
-        return tasks
-    except Exception as e:
-        logger.error(f"Error fetching tasks: {str(e)}")
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Error fetching tasks: {str(e)}"
-        )
+    tasks = db.query(Task).all()
+    for task in tasks:
+        project = db.query(Project).filter(Project.id == task.project_id).first()
+        task.project_name = project.title if project else "None"
+    return tasks
 
 @router.get("/{task_id}", response_model=TaskResponse)
 def get_task(task_id: int, db: Session = Depends(get_db)):
@@ -122,6 +117,7 @@ def update_task(
         db_task.description = task_data.description
         db_task.project_id = task_data.project_id
         db_task.tags = tags
+        db_task.due_date = task_data.due_date
         db.add(db_task)  # Явно добавляем задачу в сессию для обновления отношений
         db.commit()
         db.refresh(db_task)
